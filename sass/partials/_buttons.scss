@@ -1,15 +1,21 @@
 .btn {
-	 font-weight: 100;
+	 webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+     -o-transition: all 0.3s ease;
+     -ms-transition: all 0.3s ease;
+     transition: all 0.3s ease;
+	 font-weight: 600;
 	 font-size: 24px;
+	 letter-spacing: 3px;
+	 text-transform: uppercase;
 	 line-height: 24px;
-	 color:#fff;
-	 padding: 18px 65px 21px;
-	 box-shadow:0 3px 0 #0b506f;
-	 background: green;
+	 border: solid #000 3px;
+	 background: #fff;
 	 display: block;
-	 border-radius: 4px;
-	 float: left;
-	 border-top:1px solid #0AB55F;
-	 margin-bottom: 8px;
+	 padding: 20px 40px;
+	 &:hover{
+	 	background:black;
+	 	color: white;
+	 }
 }	
 

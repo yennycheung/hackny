@@ -1,20 +1,12 @@
 $(function() {
-	// Form Validation
-	ezValidation.init();
-	
-	// Homepage banner button click 
-	var $footeroffset = Math.floor($("footer").offset().top);
-	
-
-	// Desktop Animation 
-	if($(window).width() > 1026) {
-		$(".banner .darkgreengradient").on('click', function(e) {
-			$("html, body").animate({
-				scrollTop : $footeroffset
-			});
-			e.preventDefault();
-		});
-	}
+	var height = $(window).innerHeight();
+    $(".cover").css("height", height*0.9);
+    $(".nav li").css("line-height", height*0.1.toString()+"px");
+    $(".divider").css("width", $(window).width()*0.35);
+	$(".hashtag").typed({
+		strings: ["Build Cool Things", "Coolest Startup Scene", "Best City", "Hack On"],
+		typeSpeed: 50
+	});
 
 	// Tablet Animation 
 	if($(window).width() > 767) {

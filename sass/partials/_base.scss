@@ -12,17 +12,16 @@ header, nav, section, article, aside, footer {
    display:block;
 }
 .container {
-	
+
 }
 .error {
 	color:red !important;
 	border-color:red !important;
 }
 .wrapper {
-	
-	.inner {
-		
-	}
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .base {
 	
@@ -54,9 +53,39 @@ section.everythingcentered {
 		text-align: center;
 	}
 }
+.divider{
+		height: 5px;
+		background-color: black;
+		margin-top: 40px;
+}
 .hide {
 	display: none;
 }
 .show {
 	display:block;
+}
+
+//typed.js plugin customization 
+.typed-cursor{
+	font-size: 40px;
+	font-weight: 600;
+    opacity: 1;
+    -webkit-animation: blink 0.8s infinite;
+    -moz-animation: blink 0.8s infinite;
+    animation: blink 0.8s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }

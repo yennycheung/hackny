@@ -1,0 +1,27 @@
+section.welcome{
+	overflow: auto;
+	.left{
+		float:left;
+		position: absolute;
+		.logo{
+			height: 50px;
+		}
+		.hashtag{
+			text-transform: uppercase;
+			background-color: black;
+			color: white;
+			display: inline-block;
+			padding: 8px;
+		}
+		
+		.apply{
+			margin-top: 50px;
+		}
+	}
+	.right{
+		float: right;
+		width: 68%;
+		overflow: hidden;
+	}	
+}
+

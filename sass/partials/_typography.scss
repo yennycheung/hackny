@@ -1,22 +1,25 @@
 /* INCLUDE FONTS */
+@import url(http://fonts.googleapis.com/css?family=Poiret+One|Raleway:600,200);
 
 /* END INCLUDE FONTS */
-
-p, li, a, span {
-    
-    font-size:16px;
+*{
+	font-family: 'Raleway', sans-serif;
 }
-p, li, span, h1, h3, h4, h5, h6 {
+p, li, h1, h3, h4, h5, h6 {
     
    
 }
 h1 {
-
+	font-family: Poiret One, cursive;
+	font-size: 70px;
+	span{
+		font-family: inherit;
+		font-size: 50px;
+	}
 }
 h2 {
-    
-    
-    
+    font-weight:600;
+    font-size: 40px;
 }
 h3 {
     
@@ -32,9 +35,22 @@ p {
 }
 a {
     text-decoration:none;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 8px;
+    webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     &:hover {
-        text-decoration: underline;
+    	cursor: pointer;
+        background-color: black;
+        color:white;
     }
+}
+li{
+	font-size: 30px;
 }
 strong {
     
