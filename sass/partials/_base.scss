@@ -11,9 +11,6 @@ body {
 header, nav, section, article, aside, footer {
    display:block;
 }
-.container {
-
-}
 .error {
 	color:red !important;
 	border-color:red !important;
@@ -22,9 +19,13 @@ header, nav, section, article, aside, footer {
 	width: 96%;
 	margin-left: auto;
 	margin-right: auto;
+	overflow: auto;
 }
-.base {
-	
+.left{
+	float: left;
+}
+.right{
+	float: right;
 }
 form {
 	width:100%;
@@ -43,20 +44,9 @@ section {
 	overflow: hidden;
 	clear: both;
 }
-section.everythingcentered {
-	overflow:hidden;
-	padding:50px 0;
-	h2 {
-	 	text-align: center;
-	}
-	p {
-		text-align: center;
-	}
-}
 .divider{
-		height: 5px;
-		background-color: black;
-		margin-top: 40px;
+	border-bottom: 1px solid black;
+	margin: 30px 0;
 }
 .hide {
 	display: none;
@@ -64,7 +54,13 @@ section.everythingcentered {
 .show {
 	display:block;
 }
-
+//hide header upon scrolling up
+.nav-up {
+    top: -80px;
+}
+.nav-down{
+	top: 0;
+}
 //typed.js plugin customization 
 .typed-cursor{
 	font-size: 40px;

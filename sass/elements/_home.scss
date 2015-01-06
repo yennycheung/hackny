@@ -1,7 +1,30 @@
+header{
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	background-color: white;
+	border-bottom: 1px #eee solid;
+	box-shadow: 1px 1px 1px #eee;
+	z-index: 999;
+	webkit-transition: top 0.3s ease-in-out;
+     -moz-transition: top 0.3s ease-in-out;
+     -o-transition: top 0.3s ease-in-out;
+     -ms-transition: top 0.3s ease-in-out;
+     transition: top 0.3s ease-in-out;
+	.logo{
+		margin-top: 25px;
+		height: 30px;
+	}
+	.right{
+		width: 68%;
+		li{
+			line-height: 80px !important; 
+		}
+	}
+}
 section.welcome{
 	overflow: auto;
 	.left{
-		float:left;
 		position: absolute;
 		.logo{
 			height: 50px;
@@ -13,15 +36,88 @@ section.welcome{
 			display: inline-block;
 			padding: 8px;
 		}
-		
+
 		.apply{
 			margin-top: 50px;
 		}
 	}
 	.right{
-		float: right;
 		width: 68%;
 		overflow: hidden;
 	}	
 }
 
+section.about{
+	padding: 150px 0;
+	.wrapper{
+		text-align: center;
+		width:50%;
+		h3{
+			width: 70%;
+		}
+		.divider{
+			width: 100% !important;
+		}
+		.btn{
+			margin: 40px auto;
+		}
+	}
+}
+section.advice{
+	.row{
+		display: block;
+		overflow:auto;
+		margin-bottom: 80px;
+		height: 560px;
+		overflow:hidden;
+		&:nth-child(odd){
+			img{
+				float:right;
+			}
+			div{
+				float:left;
+			}
+		}
+		&:nth-child(even){
+			img{
+				float:left;
+			}
+			div{
+				float:right;
+			}
+		}	
+		.caption{
+			width: 58%;
+			.divider{
+				position: absolute;
+				width: 80px !important; 
+				transform: translate(0px, 60px);
+			}
+			h1, h2, p, .btn{
+				margin-left: 100px;
+			}
+			.btn{
+				margin-top: 30px;
+			}
+			h1{
+				position: relative;
+			}
+		}
+		img{
+			webkit-transition: all 0.3s ease;
+		    -moz-transition: all 0.3s ease;
+		    -o-transition: all 0.3s ease;
+		    -ms-transition: all 0.3s ease;
+		    transition: all 0.3s ease;
+			display: inline-block;
+			width: 650px;
+			margin: 50px 0;
+			
+			&:hover{
+				cursor:pointer;
+				-webkit-transform: scale(0.96,0.96);
+				-moz-transform:scale(0.96,0.96);
+			}			
+		}
+	}
+}

@@ -1,11 +1,60 @@
 $(function() {
 	var height = $(window).innerHeight();
-    $(".cover").css("height", height*0.9);
+    $(".cover-pic").css("height", height*0.9);
     $(".nav li").css("line-height", height*0.1.toString()+"px");
     $(".divider").css("width", $(window).width()*0.35);
 	$(".hashtag").typed({
 		strings: ["Build Cool Things", "Coolest Startup Scene", "Best City", "Hack On"],
 		typeSpeed: 50
+	});
+
+	//hiding the header upon scrolling up and vice versa
+	var didScroll;
+	var lastScrollTop = 0;
+	var delta = 6;
+	var navbarHeight = $('header').outerHeight();
+
+	$(window).scroll(function(event){
+	    didScroll = true;
+	});
+
+	setInterval(function() {
+	    if (didScroll) {
+	        hasScrolled();
+	        didScroll = false;
+	    }
+	}, 250);
+
+	function hasScrolled() {
+	    var st = $(this).scrollTop();
+	    
+	    // Make sure they scroll more than delta
+	    if(Math.abs(lastScrollTop - st) <= delta)
+	        return;
+	    
+	    if (st > lastScrollTop && st > navbarHeight && $(window).scrollTop()>height*0.9){
+	        // Scroll Down
+	        $('header').removeClass('nav-up').addClass('nav-down');
+	    } else {
+	        // Scroll Up
+	        if(st + $(window).height() < $(document).height()) {
+	            $('header').removeClass('nav-down').addClass('nav-up');
+	        }
+	    }	    
+	    lastScrollTop = st;
+	}
+
+	$('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top-80
+	        }, 1000);
+	        return false;
+	      }
+	    }
 	});
 
 	// Tablet Animation 

@@ -4,7 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url(http://fonts.googleapis.com/css?family=Poiret+One|Raleway:600,200);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One|Raleway:600,300);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -376,9 +376,20 @@ h1 {
 
 h2 {
   font-weight: 600;
-  font-size: 40px; }
+  font-size: 40px;
+  margin: 40px auto; }
+
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 20px auto; }
+
+p {
+  font-size: 20px;
+  line-height: 1.5; }
 
 a {
+  color: black;
   text-decoration: none;
   font-weight: 600;
   font-size: 30px;
@@ -388,6 +399,8 @@ a {
   -o-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease; }
+  a:visited {
+    color: black; }
   a:hover {
     cursor: pointer;
     background-color: black;
@@ -413,7 +426,14 @@ header, nav, section, article, aside, footer {
 .wrapper {
   width: 96%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  overflow: auto; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
 
 form {
   width: 100%;
@@ -427,24 +447,21 @@ section {
   overflow: hidden;
   clear: both; }
 
-section.everythingcentered {
-  overflow: hidden;
-  padding: 50px 0; }
-  section.everythingcentered h2 {
-    text-align: center; }
-  section.everythingcentered p {
-    text-align: center; }
-
 .divider {
-  height: 5px;
-  background-color: black;
-  margin-top: 40px; }
+  border-bottom: 1px solid black;
+  margin: 30px 0; }
 
 .hide {
   display: none; }
 
 .show {
   display: block; }
+
+.nav-up {
+  top: -80px; }
+
+.nav-down {
+  top: 0; }
 
 .typed-cursor {
   font-size: 40px;
@@ -499,10 +516,30 @@ ul {
   ul li {
     display: inline-block; }
 
+header {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  border-bottom: 1px #eee solid;
+  box-shadow: 1px 1px 1px #eee;
+  z-index: 999;
+  webkit-transition: top 0.3s ease-in-out;
+  -moz-transition: top 0.3s ease-in-out;
+  -o-transition: top 0.3s ease-in-out;
+  -ms-transition: top 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out; }
+  header .logo {
+    margin-top: 25px;
+    height: 30px; }
+  header .right {
+    width: 68%; }
+    header .right li {
+      line-height: 80px !important; }
+
 section.welcome {
   overflow: auto; }
   section.welcome .left {
-    float: left;
     position: absolute; }
     section.welcome .left .logo {
       height: 50px; }
@@ -515,27 +552,59 @@ section.welcome {
     section.welcome .left .apply {
       margin-top: 50px; }
   section.welcome .right {
-    float: right;
     width: 68%;
     overflow: hidden; }
 
-@media (max-width: 1024px) {
-  .home .banner {
-    height: auto;
-    overflow: hidden;
-    padding-bottom: 30px; }
-  .home .mobilecloud .text {
-    margin-top: 20px;
-    width: 49%; }
-  .home .mobilecloud img {
+section.about {
+  padding: 150px 0; }
+  section.about .wrapper {
+    text-align: center;
     width: 50%; }
-  .home .rules img {
-    width: 100%; }
-  .home .corporate .text {
-    margin-left: 0;
-    float: right;
-    margin-top: 10px; }
-  .home .corporate img {
-    width: 45%; } }
+    section.about .wrapper h3 {
+      width: 70%; }
+    section.about .wrapper .divider {
+      width: 100% !important; }
+    section.about .wrapper .btn, section.about .wrapper input[type=submit] {
+      margin: 40px auto; }
+
+section.advice .row {
+  display: block;
+  overflow: auto;
+  margin-bottom: 80px;
+  height: 560px;
+  overflow: hidden; }
+  section.advice .row:nth-child(odd) img {
+    float: right; }
+  section.advice .row:nth-child(odd) div {
+    float: left; }
+  section.advice .row:nth-child(even) img {
+    float: left; }
+  section.advice .row:nth-child(even) div {
+    float: right; }
+  section.advice .row .caption {
+    width: 58%; }
+    section.advice .row .caption .divider {
+      position: absolute;
+      width: 80px !important;
+      transform: translate(0px, 60px); }
+    section.advice .row .caption h1, section.advice .row .caption h2, section.advice .row .caption p, section.advice .row .caption .btn, section.advice .row .caption input[type=submit] {
+      margin-left: 100px; }
+    section.advice .row .caption .btn, section.advice .row .caption input[type=submit] {
+      margin-top: 30px; }
+    section.advice .row .caption h1 {
+      position: relative; }
+  section.advice .row img {
+    webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: 650px;
+    margin: 50px 0; }
+    section.advice .row img:hover {
+      cursor: pointer;
+      -webkit-transform: scale(0.96, 0.96);
+      -moz-transform: scale(0.96, 0.96); }
 
 /*# sourceMappingURL=main.css.map */
