@@ -73,6 +73,11 @@ section.advice{
 		&:nth-child(odd){
 			img{
 				float:right;
+				&:hover{
+					& ~ div{
+						transform: translate(18px, 0);
+					}
+				}
 			}
 			div{
 				float:left;
@@ -81,12 +86,26 @@ section.advice{
 		&:nth-child(even){
 			img{
 				float:left;
+				&:hover{
+					& ~ div{
+						transform: translate(-18px, 0);
+					}
+				}
 			}
 			div{
 				float:right;
+				.divider{
+					width: 120px !important;
+					transform: translate(-60px, 60px);
+				}
 			}
 		}	
 		.caption{
+			webkit-transition: all 0.3s ease;
+		    -moz-transition: all 0.3s ease;
+		    -o-transition: all 0.3s ease;
+		    -ms-transition: all 0.3s ease;
+		    transition: all 0.3s ease;
 			width: 58%;
 			.divider{
 				position: absolute;
