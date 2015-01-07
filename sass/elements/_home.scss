@@ -63,6 +63,50 @@ section.about{
 		}
 	}
 }
+section.deadlines{
+	padding-bottom: 150px;
+	.wrapper{
+		overflow: hidden;
+		h1{
+			position: relative;
+			transform: translate(50%, 0);
+		}
+		.divider{
+			position: absolute;
+			width: 300px !important;
+			right: 30px;
+			transform: translate(-50%, 60px);
+		}
+		.timelines{
+			margin: 80px auto;
+			text-align: center;
+			.timeline{
+				position: relative;
+				display: inline-block;
+				height: 120px;
+				width: 200px;
+				background-size: contain !important;
+				background-repeat: no-repeat !important;
+				&:nth-child(odd){
+					background: url("../img/arrow_white.png");
+				}
+				&:nth-child(even){
+					background: url("../img/arrow_black.png");
+					color: white;
+				}
+				p{
+					margin: auto;
+					position: absolute;
+					left: 0;
+					right: 0;
+					transform: translate(5%, 50%);
+				}
+			}
+		}
+		
+	}
+	
+}
 section.advice{
 	.row{
 		display: block;
