@@ -75,7 +75,7 @@ section.about{
 			margin: 40px 0;
 			a{
 				font-size: 20px;
-				padding: 0;
+				padding: 0px;
 			}
 		}
 		.btn{
@@ -138,6 +138,7 @@ section.deadlines{
 	
 }
 section.advice{
+	margin-bottom: 80px;
 	.row{
 		display: block;
 		overflow:auto;
@@ -216,6 +217,7 @@ section.advice{
 	}
 }
 section.news{
+	margin-bottom: 150px;
 	.wrapper{
 		overflow: hidden;
 		h1{
@@ -231,6 +233,7 @@ section.news{
 		.news-items{
 			margin: 100px auto;
 			text-align: center;
+			position: relative;
 			.divider{
 				position: absolute;
 				display: inline-block;
@@ -238,9 +241,16 @@ section.news{
 				width: 35px !important;
 				transform: translate(-20px,0);
 			}
+			p{
+				@include vertical-align;
+				position:absolute;
+				display: inline-block;
+				width: 100px;
+				font-size: 16px;
+				margin-left: 40px;
+			}
 			.item{
 				display: inline-block;
-				position: relative;
 				width: 100px;
 				height: 100px;
 				margin: 0 40px;
@@ -249,30 +259,32 @@ section.news{
 				text-align: center;
 				-ms-transform: rotate(-45deg); /* IE 9 */
 			    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
-			    transform: rotate(-45deg);
-				div{
-					width: 80px;
-					height: 80px;
-					margin: 0 !important;
-					-ms-transform: rotate(45deg); /* IE 9 */
-				    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-				    transform: rotate(45deg);
-					p{
-						@include vertical-align;
-						width: 100px;
-						position: absolute;
-						font-size: 16px;
+			    transform: rotate(-45deg);			
+				&:hover{
+					&{
+						background: none;
+						-ms-transform: rotate(45deg); /* IE 9 */
+					    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+					    transform: rotate(45deg);
 					}
 				}
-				
-				&:hover{
-					// & ~ a{
-					// 	-ms-transform: rotate(360deg); /* IE 9 */
-					//     -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
-					//     transform: rotate(45deg);
-					// }
-				}
 			}
+		}
+	}
+}
+footer{
+	.wrapper{
+		border-top: 2px solid black;
+		.left,.right{
+			margin: 30px 0;
+		}
+		ul{
+			a{
+				font-size: 22px;
+			}
+		}
+		p{
+			font-size: 22px;
 		}
 	}
 }

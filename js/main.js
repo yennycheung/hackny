@@ -7,6 +7,14 @@ $(function() {
 		strings: ["Build Cool Things", "Coolest Startup Scene", "Best City", "Hack On"],
 		typeSpeed: 50
 	});
+	$(".item").hover(
+		function(){
+			$(this).prev().css("font-weight",600);
+		},
+		function(){
+			$(this).prev().css("font-weight",300);
+		}
+	);
 
 	//hiding the header upon scrolling up and vice versa
 	var didScroll;

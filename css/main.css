@@ -576,7 +576,7 @@ section.about {
       margin: 40px 0; }
       section.about .wrapper p a {
         font-size: 20px;
-        padding: 0; }
+        padding: 0px; }
     section.about .wrapper .btn, section.about .wrapper input[type=submit] {
       margin: 50px auto;
       display: block; }
@@ -621,108 +621,121 @@ section.deadlines {
           right: 0;
           transform: translate(5%, 50%); }
 
-section.advice .row {
-  display: block;
-  overflow: auto;
-  margin-bottom: 80px;
-  height: 560px;
-  overflow: hidden; }
-  section.advice .row:nth-child(odd) img {
-    float: right; }
-    section.advice .row:nth-child(odd) img:hover ~ div {
-      transform: translate(18px, 0); }
-  section.advice .row:nth-child(odd) div {
-    float: left; }
-  section.advice .row:nth-child(even) img {
-    float: left; }
-    section.advice .row:nth-child(even) img:hover ~ div {
-      transform: translate(-18px, 0); }
-  section.advice .row:nth-child(even) div {
-    float: right; }
-    section.advice .row:nth-child(even) div .divider {
-      width: 120px !important;
-      transform: translate(-60px, 50px); }
-  section.advice .row .caption {
-    webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    width: 58%; }
-    section.advice .row .caption .divider {
-      position: absolute;
-      width: 80px !important;
-      transform: translate(0px, 50px); }
-    section.advice .row .caption h1, section.advice .row .caption h2, section.advice .row .caption p, section.advice .row .caption .btn, section.advice .row .caption input[type=submit] {
-      margin-left: 100px; }
-    section.advice .row .caption .btn, section.advice .row .caption input[type=submit] {
-      margin-top: 30px; }
-    section.advice .row .caption h1 {
-      position: relative;
-      font-size: 60px; }
-  section.advice .row img {
-    webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    display: inline-block;
-    width: 650px;
-    margin: 50px 0; }
-    section.advice .row img:hover {
-      cursor: pointer;
-      -webkit-transform: scale(0.96, 0.96);
-      -moz-transform: scale(0.96, 0.96); }
+section.advice {
+  margin-bottom: 80px; }
+  section.advice .row {
+    display: block;
+    overflow: auto;
+    margin-bottom: 80px;
+    height: 560px;
+    overflow: hidden; }
+    section.advice .row:nth-child(odd) img {
+      float: right; }
+      section.advice .row:nth-child(odd) img:hover ~ div {
+        transform: translate(18px, 0); }
+    section.advice .row:nth-child(odd) div {
+      float: left; }
+    section.advice .row:nth-child(even) img {
+      float: left; }
+      section.advice .row:nth-child(even) img:hover ~ div {
+        transform: translate(-18px, 0); }
+    section.advice .row:nth-child(even) div {
+      float: right; }
+      section.advice .row:nth-child(even) div .divider {
+        width: 120px !important;
+        transform: translate(-60px, 50px); }
+    section.advice .row .caption {
+      webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      width: 58%; }
+      section.advice .row .caption .divider {
+        position: absolute;
+        width: 80px !important;
+        transform: translate(0px, 50px); }
+      section.advice .row .caption h1, section.advice .row .caption h2, section.advice .row .caption p, section.advice .row .caption .btn, section.advice .row .caption input[type=submit] {
+        margin-left: 100px; }
+      section.advice .row .caption .btn, section.advice .row .caption input[type=submit] {
+        margin-top: 30px; }
+      section.advice .row .caption h1 {
+        position: relative;
+        font-size: 60px; }
+    section.advice .row img {
+      webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      display: inline-block;
+      width: 650px;
+      margin: 50px 0; }
+      section.advice .row img:hover {
+        cursor: pointer;
+        -webkit-transform: scale(0.96, 0.96);
+        -moz-transform: scale(0.96, 0.96); }
 
-section.news .wrapper {
-  overflow: hidden; }
-  section.news .wrapper h1 {
-    position: relative;
-    transform: translate(30%, 0); }
-  section.news .wrapper #title-divider {
-    position: absolute;
-    width: 300px !important;
-    right: 30px;
-    transform: translate(-50%, 65px); }
-  section.news .wrapper .news-items {
-    margin: 100px auto;
-    text-align: center; }
-    section.news .wrapper .news-items .divider {
-      position: absolute;
-      display: inline-block;
-      margin-top: 50px !important;
-      width: 35px !important;
-      transform: translate(-20px, 0); }
-    section.news .wrapper .news-items .item {
-      display: inline-block;
+section.news {
+  margin-bottom: 150px; }
+  section.news .wrapper {
+    overflow: hidden; }
+    section.news .wrapper h1 {
       position: relative;
-      width: 100px;
-      height: 100px;
-      margin: 0 40px;
-      padding: 0 !important;
-      border: 3px solid black;
+      transform: translate(30%, 0); }
+    section.news .wrapper #title-divider {
+      position: absolute;
+      width: 300px !important;
+      right: 30px;
+      transform: translate(-50%, 65px); }
+    section.news .wrapper .news-items {
+      margin: 100px auto;
       text-align: center;
-      -ms-transform: rotate(-45deg);
-      /* IE 9 */
-      -webkit-transform: rotate(-45deg);
-      /* Chrome, Safari, Opera */
-      transform: rotate(-45deg); }
-      section.news .wrapper .news-items .item div {
-        width: 80px;
-        height: 80px;
-        margin: 0 !important;
-        -ms-transform: rotate(45deg);
+      position: relative; }
+      section.news .wrapper .news-items .divider {
+        position: absolute;
+        display: inline-block;
+        margin-top: 50px !important;
+        width: 35px !important;
+        transform: translate(-20px, 0); }
+      section.news .wrapper .news-items p {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        position: absolute;
+        display: inline-block;
+        width: 100px;
+        font-size: 16px;
+        margin-left: 40px; }
+      section.news .wrapper .news-items .item {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin: 0 40px;
+        padding: 0 !important;
+        border: 3px solid black;
+        text-align: center;
+        -ms-transform: rotate(-45deg);
         /* IE 9 */
-        -webkit-transform: rotate(45deg);
+        -webkit-transform: rotate(-45deg);
         /* Chrome, Safari, Opera */
-        transform: rotate(45deg); }
-        section.news .wrapper .news-items .item div p {
-          top: 50%;
-          -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-          width: 100px;
-          position: absolute;
-          font-size: 16px; }
+        transform: rotate(-45deg); }
+        section.news .wrapper .news-items .item:hover {
+          background: none;
+          -ms-transform: rotate(45deg);
+          /* IE 9 */
+          -webkit-transform: rotate(45deg);
+          /* Chrome, Safari, Opera */
+          transform: rotate(45deg); }
+
+footer .wrapper {
+  border-top: 2px solid black; }
+  footer .wrapper .left, footer .wrapper .right {
+    margin: 30px 0; }
+  footer .wrapper ul a {
+    font-size: 22px; }
+  footer .wrapper p {
+    font-size: 22px; }
 
 /*# sourceMappingURL=main.css.map */
