@@ -55,7 +55,7 @@ section.welcome{
 }
 
 section.about{
-	padding: 150px 0;
+	padding: 20px 0 100px 0;
 	.wrapper{
 		text-align: center;
 		width:60%;
@@ -105,7 +105,7 @@ section.deadlines{
 			position: absolute;
 			width: 300px !important;
 			right: 30px;
-			transform: translate(-50%, 60px);
+			transform: translate(-50%, 65px);
 		}
 		.timelines{
 			margin: 80px auto;
@@ -170,7 +170,7 @@ section.advice{
 				float:right;
 				.divider{
 					width: 120px !important;
-					transform: translate(-60px, 60px);
+					transform: translate(-60px, 50px);
 				}
 			}
 		}	
@@ -184,7 +184,7 @@ section.advice{
 			.divider{
 				position: absolute;
 				width: 80px !important; 
-				transform: translate(0px, 60px);
+				transform: translate(0px, 50px);
 			}
 			h1, h2, p, .btn{
 				margin-left: 100px;
@@ -194,6 +194,7 @@ section.advice{
 			}
 			h1{
 				position: relative;
+				font-size: 60px;
 			}
 		}
 		img{
@@ -211,6 +212,67 @@ section.advice{
 				-webkit-transform: scale(0.96,0.96);
 				-moz-transform:scale(0.96,0.96);
 			}			
+		}
+	}
+}
+section.news{
+	.wrapper{
+		overflow: hidden;
+		h1{
+			position: relative;
+			transform: translate(30%, 0);
+		}
+		#title-divider{
+			position: absolute;
+			width: 300px !important;
+			right: 30px;
+			transform: translate(-50%, 65px);
+		}
+		.news-items{
+			margin: 100px auto;
+			text-align: center;
+			.divider{
+				position: absolute;
+				display: inline-block;
+				margin-top: 50px !important;
+				width: 35px !important;
+				transform: translate(-20px,0);
+			}
+			.item{
+				display: inline-block;
+				position: relative;
+				width: 100px;
+				height: 100px;
+				margin: 0 40px;
+				padding: 0 !important;
+				border: 3px solid black;
+				text-align: center;
+				-ms-transform: rotate(-45deg); /* IE 9 */
+			    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+			    transform: rotate(-45deg);
+				div{
+					width: 80px;
+					height: 80px;
+					margin: 0 !important;
+					-ms-transform: rotate(45deg); /* IE 9 */
+				    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+				    transform: rotate(45deg);
+					p{
+						@include vertical-align;
+						width: 100px;
+						position: absolute;
+						font-size: 16px;
+					}
+				}
+				
+				&:hover{
+					// & ~ a{
+					// 	-ms-transform: rotate(360deg); /* IE 9 */
+					//     -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+					//     transform: rotate(45deg);
+					// }
+				}
+			}
 		}
 	}
 }

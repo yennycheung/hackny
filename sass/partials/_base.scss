@@ -27,6 +27,13 @@ header, nav, section, article, aside, footer {
 .right{
 	float: right;
 }
+//vertically aligning elements
+@mixin vertical-align {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 form {
 	width:100%;
 	overflow:hidden;
