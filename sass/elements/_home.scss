@@ -11,16 +11,23 @@ header{
      -o-transition: top 0.3s ease-in-out;
      -ms-transition: top 0.3s ease-in-out;
      transition: top 0.3s ease-in-out;
-	.logo{
-		margin-top: 25px;
-		height: 30px;
+	.logo-link{
+		&:hover{
+			background: none;
+		}
+		.logo{
+			margin-top: 25px;
+			height: 30px;
+		}
 	}
+	
 	.right{
 		width: 68%;
 		li{
 			line-height: 80px !important; 
 		}
 	}
+	
 }
 section.welcome{
 	overflow: auto;
@@ -51,15 +58,38 @@ section.about{
 	padding: 150px 0;
 	.wrapper{
 		text-align: center;
-		width:50%;
+		width:60%;
 		h3{
 			width: 70%;
 		}
 		.divider{
-			width: 100% !important;
+			position: absolute;
+			border-bottom: 0px;
+			border-right: 1px solid black;
+			margin: 40px 0 0 0 !important;
+			width: 30% !important;
+			height: 40%;
+		}
+		p{
+			position: relative;
+			margin: 40px 0;
+			a{
+				font-size: 20px;
+				padding: 0;
+			}
 		}
 		.btn{
-			margin: 40px auto;
+			margin: 50px auto;
+			display: block;
+		}
+		.left, .right{
+			width: 46%;
+		}
+		.left{
+			text-align: right;
+		}
+		.right{
+			text-align: left;
 		}
 	}
 }

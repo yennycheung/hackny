@@ -529,7 +529,9 @@ header {
   -o-transition: top 0.3s ease-in-out;
   -ms-transition: top 0.3s ease-in-out;
   transition: top 0.3s ease-in-out; }
-  header .logo {
+  header .logo-link:hover {
+    background: none; }
+  header .logo-link .logo {
     margin-top: 25px;
     height: 30px; }
   header .right {
@@ -559,13 +561,31 @@ section.about {
   padding: 150px 0; }
   section.about .wrapper {
     text-align: center;
-    width: 50%; }
+    width: 60%; }
     section.about .wrapper h3 {
       width: 70%; }
     section.about .wrapper .divider {
-      width: 100% !important; }
+      position: absolute;
+      border-bottom: 0px;
+      border-right: 1px solid black;
+      margin: 40px 0 0 0 !important;
+      width: 30% !important;
+      height: 40%; }
+    section.about .wrapper p {
+      position: relative;
+      margin: 40px 0; }
+      section.about .wrapper p a {
+        font-size: 20px;
+        padding: 0; }
     section.about .wrapper .btn, section.about .wrapper input[type=submit] {
-      margin: 40px auto; }
+      margin: 50px auto;
+      display: block; }
+    section.about .wrapper .left, section.about .wrapper .right {
+      width: 46%; }
+    section.about .wrapper .left {
+      text-align: right; }
+    section.about .wrapper .right {
+      text-align: left; }
 
 section.deadlines {
   padding-bottom: 150px; }
