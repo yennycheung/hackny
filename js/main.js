@@ -1,8 +1,13 @@
 $(function() {
 	var height = $(window).innerHeight();
-    $(".cover-pic").css("height", height*0.9);
-    $(".nav li").css("line-height", height*0.1.toString()+"px");
-    $(".divider").css("width", $(window).width()*0.35);
+	function resizingElements(){
+	    var height = $(window).innerHeight();
+		$(".cover-pic").css("height", height*0.9);
+	    $(".nav li").css("line-height", height*0.1.toString()+"px");
+	    $(".divider").css("width", $(window).width()*0.35);
+	    $("#middle-divider").css("height", $("section.about p").height());
+	}
+	resizingElements();
 	$(".hashtag").typed({
 		strings: ["Build Cool Things", "Coolest Startup Scene", "Best City", "Hack On"],
 		typeSpeed: 50
@@ -15,17 +20,19 @@ $(function() {
 			$(this).prev().css("font-weight",300);
 		}
 	);
-
+	$(window).resize(function(event){
+		resizingElements();
+	});
 	//hiding the header upon scrolling up and vice versa
 	var didScroll;
 	var lastScrollTop = 0;
 	var delta = 6;
 	var navbarHeight = $('header').outerHeight();
 
+
 	$(window).scroll(function(event){
 	    didScroll = true;
 	});
-
 	setInterval(function() {
 	    if (didScroll) {
 	        hasScrolled();

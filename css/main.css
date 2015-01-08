@@ -367,32 +367,36 @@ th {
 * {
   font-family: 'Raleway', sans-serif; }
 
+html {
+  font-size: 18px; }
+
 h1 {
+  margin: 2rem auto;
   font-family: Poiret One, cursive;
-  font-size: 70px; }
+  font-size: 3.5rem; }
   h1 span {
     font-family: inherit;
-    font-size: 50px; }
+    font-size: 2.5rem; }
 
 h2 {
   font-weight: 600;
-  font-size: 40px;
-  margin: 40px auto; }
+  font-size: 2rem;
+  margin: 1.8rem auto; }
 
 h3 {
   font-weight: 600;
-  font-size: 20px;
-  margin: 20px auto; }
+  font-size: 1rem;
+  margin: 1rem auto; }
 
 p {
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 1.5; }
 
 a {
   color: black;
   text-decoration: none;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 1.5rem;
   padding: 8px;
   webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -407,7 +411,7 @@ a {
     color: white; }
 
 li {
-  font-size: 30px; }
+  font-size: 1.5rem; }
 
 * {
   margin: 0;
@@ -449,7 +453,7 @@ section {
 
 .divider {
   border-bottom: 1px solid black;
-  margin: 30px 0; }
+  margin: 1.4rem 0; }
 
 .hide {
   display: none; }
@@ -499,14 +503,14 @@ section {
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.2 rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-  line-height: 24px;
+  line-height: 1.2 rem;
   border: solid #000 3px;
   background: #fff;
   display: block;
-  padding: 20px 40px; }
+  padding: 1rem 2rem; }
   .btn:hover, input[type=submit]:hover {
     background: black;
     color: white; }
@@ -544,7 +548,7 @@ section.welcome {
   section.welcome .left {
     position: absolute; }
     section.welcome .left .logo {
-      height: 50px; }
+      height: 2.5rem; }
     section.welcome .left .hashtag {
       text-transform: uppercase;
       background-color: black;
@@ -552,25 +556,29 @@ section.welcome {
       display: inline-block;
       padding: 8px; }
     section.welcome .left .apply {
-      margin-top: 50px; }
+      margin-top: 2rem; }
   section.welcome .right {
     width: 68%;
     overflow: hidden; }
+    section.welcome .right .cover-pic {
+      background: url("../img/coverpic.png") no-repeat center;
+      background-size: cover; }
 
 section.about {
-  padding: 20px 0 100px 0; }
+  padding: 1.2rem 0 6rem 0; }
   section.about .wrapper {
     text-align: center;
     width: 60%; }
+    section.about .wrapper .container {
+      overflow: auto; }
     section.about .wrapper h3 {
       width: 70%; }
     section.about .wrapper .divider {
       position: absolute;
       border-bottom: 0px;
       border-right: 1px solid black;
-      margin: 40px 0 0 0 !important;
-      width: 30% !important;
-      height: 40%; }
+      margin: 45px 0 0 0 !important;
+      width: 30% !important; }
     section.about .wrapper p {
       position: relative;
       margin: 40px 0; }
@@ -578,7 +586,7 @@ section.about {
         font-size: 20px;
         padding: 0px; }
     section.about .wrapper .btn, section.about .wrapper input[type=submit] {
-      margin: 50px auto;
+      margin: auto;
       display: block; }
     section.about .wrapper .left, section.about .wrapper .right {
       width: 46%; }
@@ -588,7 +596,7 @@ section.about {
       text-align: left; }
 
 section.deadlines {
-  padding-bottom: 150px; }
+  padding-bottom: 10rem; }
   section.deadlines .wrapper {
     overflow: hidden; }
     section.deadlines .wrapper h1 {
@@ -600,13 +608,13 @@ section.deadlines {
       right: 30px;
       transform: translate(-50%, 65px); }
     section.deadlines .wrapper .timelines {
-      margin: 80px auto;
+      margin: 4rem auto;
       text-align: center; }
       section.deadlines .wrapper .timelines .timeline {
         position: relative;
         display: inline-block;
-        height: 120px;
-        width: 200px;
+        height: 6rem;
+        width: 10rem;
         background-size: contain !important;
         background-repeat: no-repeat !important; }
         section.deadlines .wrapper .timelines .timeline:nth-child(odd) {
@@ -622,22 +630,22 @@ section.deadlines {
           transform: translate(5%, 50%); }
 
 section.advice {
-  margin-bottom: 80px; }
+  margin-bottom: 5rem; }
   section.advice .row {
     display: block;
     overflow: auto;
-    margin-bottom: 80px;
+    margin-bottom: 4rem;
     height: 560px;
     overflow: hidden; }
-    section.advice .row:nth-child(odd) img {
+    section.advice .row:nth-child(odd) .fellow-pic {
       float: right; }
-      section.advice .row:nth-child(odd) img:hover ~ div {
+      section.advice .row:nth-child(odd) .fellow-pic:hover ~ div {
         transform: translate(18px, 0); }
     section.advice .row:nth-child(odd) div {
       float: left; }
-    section.advice .row:nth-child(even) img {
+    section.advice .row:nth-child(even) .fellow-pic {
       float: left; }
-      section.advice .row:nth-child(even) img:hover ~ div {
+      section.advice .row:nth-child(even) .fellow-pic:hover ~ div {
         transform: translate(-18px, 0); }
     section.advice .row:nth-child(even) div {
       float: right; }
@@ -650,7 +658,7 @@ section.advice {
       -o-transition: all 0.3s ease;
       -ms-transition: all 0.3s ease;
       transition: all 0.3s ease;
-      width: 58%; }
+      width: 55%; }
       section.advice .row .caption .divider {
         position: absolute;
         width: 80px !important;
@@ -658,26 +666,36 @@ section.advice {
       section.advice .row .caption h1, section.advice .row .caption h2, section.advice .row .caption p, section.advice .row .caption .btn, section.advice .row .caption input[type=submit] {
         margin-left: 100px; }
       section.advice .row .caption .btn, section.advice .row .caption input[type=submit] {
-        margin-top: 30px; }
+        margin-top: 1.5rem; }
       section.advice .row .caption h1 {
         position: relative;
         font-size: 60px; }
-    section.advice .row img {
+    section.advice .row .fellow-pic {
+      background-size: cover;
       webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       -ms-transition: all 0.3s ease;
       transition: all 0.3s ease;
       display: inline-block;
-      width: 650px;
-      margin: 50px 0; }
-      section.advice .row img:hover {
+      height: 450px;
+      width: 43%;
+      margin: 53px 0; }
+      section.advice .row .fellow-pic:hover {
         cursor: pointer;
         -webkit-transform: scale(0.96, 0.96);
         -moz-transform: scale(0.96, 0.96); }
+    section.advice .row #fellow1 {
+      background: url("../img/fellow1.png") center no-repeat; }
+    section.advice .row #fellow2 {
+      background: url("../img/fellow2.png") center no-repeat; }
+    section.advice .row #fellow3 {
+      background: url("../img/fellow3.png") center no-repeat; }
+    section.advice .row #fellow4 {
+      background: url("../img/fellow4.png") center no-repeat; }
 
 section.news {
-  margin-bottom: 150px; }
+  margin-bottom: 10rem; }
   section.news .wrapper {
     overflow: hidden; }
     section.news .wrapper h1 {
@@ -695,8 +713,8 @@ section.news {
       section.news .wrapper .news-items .divider {
         position: absolute;
         display: inline-block;
-        margin-top: 50px !important;
-        width: 35px !important;
+        margin-top: 45px !important;
+        width: 1.75rem !important;
         transform: translate(-20px, 0); }
       section.news .wrapper .news-items p {
         top: 50%;
@@ -705,14 +723,14 @@ section.news {
         transform: translateY(-50%);
         position: absolute;
         display: inline-block;
-        width: 100px;
-        font-size: 16px;
-        margin-left: 40px; }
+        width: 4.5rem;
+        font-size: 0.75rem;
+        margin-left: 2rem; }
       section.news .wrapper .news-items .item {
         display: inline-block;
-        width: 100px;
-        height: 100px;
-        margin: 0 40px;
+        width: 4.5rem;
+        height: 4.5rem;
+        margin: 0 2rem;
         padding: 0 !important;
         border: 3px solid black;
         text-align: center;
@@ -732,10 +750,18 @@ section.news {
 footer .wrapper {
   border-top: 2px solid black; }
   footer .wrapper .left, footer .wrapper .right {
-    margin: 30px 0; }
+    margin: 1.5em 0; }
   footer .wrapper ul a {
-    font-size: 22px; }
+    font-size: 1rem; }
   footer .wrapper p {
-    font-size: 22px; }
+    padding: 5px;
+    font-size: 1rem; }
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 16px; } }
+@media (max-width: 786px) and (max-width: 786px) {
+  html {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=main.css.map */

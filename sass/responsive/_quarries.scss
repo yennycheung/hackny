@@ -5,11 +5,12 @@
 	@import "tablet/header";
 	@import "tablet/home";
 	@import "tablet/secondary";
+	@import "tablet/typography";
 }
 
 //Tablet (Verticle) 
 @media (max-width: 786px) {
-	@import "tablet/verticle";
+	@import "tablet/vertical";
 }
 
 //Mobile Devices
