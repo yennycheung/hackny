@@ -1,6 +1,6 @@
 @media (max-width: 786px) {
 	html{
-		font-size: 14px;
+		font-size: 15px;
 	}
 	.nav{
 		visibility: hidden;
@@ -23,4 +23,12 @@
 			display: none !important;
 		}
 	}
+	section.deadlines, section.news{
+	h1{
+		transform: none !important;
+	}
+	.title-divider{
+		display:none !important;
+	}
+}
 }	

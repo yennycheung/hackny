@@ -7,10 +7,16 @@ $(function() {
 	    $("section.welcome .divider").css("width", $(window).width()*0.35);
 	    $("#middle-divider").css("height", $("section.about p").height());
 	    if($(window).width() < 900) {
-			$(".breakpoint").removeClass("hide");
+			$("section.deadlines .breakpoint").removeClass("hide");
 		}
 		else{
-			$(".breakpoint").addClass("hide");
+			$("section.deadlines .breakpoint").addClass("hide");
+		}
+		if($(window).width() < 1125) {
+			$("section.news .breakpoint").removeClass("hide");
+		}
+		else{
+			$("section.news .breakpoint").addClass("hide");
 		}
 	}
 	resizingElements();
@@ -44,6 +50,7 @@ $(function() {
 
 	$(window).scroll(function(event){
 	    didScroll = true;
+	    $(".nav-dropdown").slideUp();
 	});
 	setInterval(function() {
 	    if (didScroll) {
