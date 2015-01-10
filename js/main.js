@@ -4,13 +4,25 @@ $(function() {
 	    var height = $(window).innerHeight();
 		$(".cover-pic").css("height", height*0.9);
 	    $(".nav li").css("line-height", height*0.1.toString()+"px");
-	    $(".divider").css("width", $(window).width()*0.35);
+	    $("section.welcome .divider").css("width", $(window).width()*0.35);
 	    $("#middle-divider").css("height", $("section.about p").height());
+	    if($(window).width() < 900) {
+			$(".breakpoint").removeClass("hide");
+		}
+		else{
+			$(".breakpoint").addClass("hide");
+		}
 	}
 	resizingElements();
 	$(".hashtag").typed({
 		strings: ["Build Cool Things", "Coolest Startup Scene", "Best City", "Hack On"],
 		typeSpeed: 50
+	});
+	$(".menu").click(function(){
+		$(".nav-dropdown").slideToggle();
+	});
+	$(".cross").click(function(){
+		$(".nav-dropdown").slideToggle();
 	});
 	$(".item").hover(
 		function(){
@@ -72,6 +84,10 @@ $(function() {
 	    }
 	});
 
+	if($(window).width() < 866) {
+		
+	}
+
 	// Tablet Animation 
 	if($(window).width() > 767) {
 		$(".banner .darkgreengradient").on('click', function(e) {
@@ -93,7 +109,7 @@ $(function() {
 			e.preventDefault();
 		});
 
-		//Mobiel Nav
+		//Mobile Nav
 		var $header = $("header"),
 			$btn = $header.find(".togglebtn"),
 			$nav = $header.find("ul.nav"),

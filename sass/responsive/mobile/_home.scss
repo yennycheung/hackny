@@ -1,0 +1,12 @@
+.wrapper{
+	width: 95% !important;
+}
+section.about{
+	.left, .right{
+		width: 100% !important;
+		text-align: left !important;
+	}
+	.divider{
+		display: none;
+	}
+}

@@ -34,6 +34,14 @@ header, nav, section, article, aside, footer {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+//animation transition
+@mixin transition {
+	webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
 form {
 	width:100%;
 	overflow:hidden;

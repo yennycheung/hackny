@@ -1,4 +1,5 @@
 header{
+	@include transition;
 	height: 80px;
 	width: 100%;
 	position: fixed;
@@ -6,11 +7,6 @@ header{
 	border-bottom: 1px #eee solid;
 	box-shadow: 1px 1px 1px #eee;
 	z-index: 999;
-	webkit-transition: top 0.3s ease-in-out;
-     -moz-transition: top 0.3s ease-in-out;
-     -o-transition: top 0.3s ease-in-out;
-     -ms-transition: top 0.3s ease-in-out;
-     transition: top 0.3s ease-in-out;
 	.logo-link{
 		&:hover{
 			background: none;
@@ -27,7 +23,57 @@ header{
 			line-height: 80px !important; 
 		}
 	}
-	
+	.menu{
+		@include vertical-align;
+		display: none;
+		position: absolute;
+		right: 3rem;
+		height: 2rem;
+		width: 2rem;
+		&:hover{
+			cursor:pointer;
+		}
+	}
+	.nav-dropdown{
+		display:none;
+		background-color: black;
+		position: absolute;
+		padding: 3rem;
+		right: 0;
+		top: 80px;
+		li{
+			@include transition;
+			&:first-child{
+				padding-right: 0;
+			}
+			display: block;
+			padding: 1.2rem 2.8rem 1.2rem 0;
+			border-bottom: 1px white solid;
+			p{
+				color: white;
+				text-transform: uppercase;
+				margin-bottom: 1rem;
+				.cross{
+					font-weight: 600;
+					float: right;
+					&:hover{
+						cursor: pointer;
+					}
+				}
+			}
+			a{
+				color: white;
+			}
+			&:not(:first-child):hover{
+				background-color: white !important;
+				cursor: pointer;
+				& > a{
+					background: none;
+					color: black;
+				}
+			}
+		}
+	}
 }
 section.welcome{
 	overflow: auto;
@@ -59,7 +105,7 @@ section.welcome{
 }
 
 section.about{
-	padding: 1.2rem 0 6rem 0;
+	padding: 1.2rem 0 12rem 0;
 	.wrapper{
 		text-align: center;
 		width:60%;
@@ -80,7 +126,7 @@ section.about{
 			position: relative;
 			margin: 40px 0;
 			a{
-				font-size: 20px;
+				font-size: 1rem;
 				padding: 0px;
 			}
 		}
@@ -100,7 +146,7 @@ section.about{
 	}
 }
 section.deadlines{
-	padding-bottom: 10rem;
+	padding-bottom: 12rem;
 	.wrapper{
 		overflow: hidden;
 		h1{
@@ -109,9 +155,9 @@ section.deadlines{
 		}
 		.divider{
 			position: absolute;
-			width: 300px !important;
-			right: 30px;
-			transform: translate(-50%, 65px);
+			width: 12rem;
+			right: 1.5rem;
+			transform: translate(-50%, 3rem);
 		}
 		.timelines{
 			margin: 4rem auto;
@@ -119,8 +165,8 @@ section.deadlines{
 			.timeline{
 				position: relative;
 				display: inline-block;
-				height: 6rem;
-				width: 10rem;
+				height: 5.5rem;
+				width: 8.8rem;
 				background-size: contain !important;
 				background-repeat: no-repeat !important;
 				&:nth-child(odd){
@@ -135,7 +181,7 @@ section.deadlines{
 					position: absolute;
 					left: 0;
 					right: 0;
-					transform: translate(5%, 50%);
+					transform: translate(5%, 40%);
 				}
 			}
 		}
@@ -144,7 +190,7 @@ section.deadlines{
 	
 }
 section.advice{
-	margin-bottom: 5rem;
+	margin-bottom: 12rem;
 	.row{
 		display: block;
 		overflow:auto;
@@ -156,7 +202,7 @@ section.advice{
 				float:right;
 				&:hover{
 					& ~ div{
-						transform: translate(18px, 0);
+						transform: translate(1rem, 0);
 					}
 				}
 			}
@@ -169,52 +215,44 @@ section.advice{
 				float:left;
 				&:hover{
 					& ~ div{
-						transform: translate(-18px, 0);
+						transform: translate(-1rem, 0);
 					}
 				}
 			}
 			div{
 				float:right;
 				.divider{
-					width: 120px !important;
-					transform: translate(-60px, 50px);
+					width: 6rem;
+					transform: translate(-3rem, 2.5rem);
 				}
 			}
 		}	
 		.caption{
-			webkit-transition: all 0.3s ease;
-		    -moz-transition: all 0.3s ease;
-		    -o-transition: all 0.3s ease;
-		    -ms-transition: all 0.3s ease;
-		    transition: all 0.3s ease;
+			@include transition;
 			width: 55%;
 			.divider{
 				position: absolute;
-				width: 80px !important; 
-				transform: translate(0px, 50px);
+				width: 4rem ; 
+				transform: translate(0px, 2.5rem);
 			}
 			h1, h2, p, .btn{
-				margin-left: 100px;
+				margin-left: 5rem;
 			}
 			.btn{
 				margin-top: 1.5rem;
 			}
 			h1{
 				position: relative;
-				font-size: 60px;
+				font-size: 3rem;
 			}
 		}
 		.fellow-pic{
+			@include transition;
 			background-size: cover;
-			webkit-transition: all 0.3s ease;
-		    -moz-transition: all 0.3s ease;
-		    -o-transition: all 0.3s ease;
-		    -ms-transition: all 0.3s ease;
-		    transition: all 0.3s ease;
 			display: inline-block;
-			height: 450px;
+			height: 23rem;
 			width: 43%;
-			margin: 53px 0;
+			margin: 3rem 0;
 			
 			&:hover{
 				cursor:pointer;
@@ -237,29 +275,29 @@ section.advice{
 	}
 }
 section.news{
-	margin-bottom: 10rem;
+	margin-bottom: 12rem;
 	.wrapper{
 		overflow: hidden;
 		h1{
 			position: relative;
-			transform: translate(30%, 0);
+			transform: translate(25%, 0);
 		}
 		#title-divider{
 			position: absolute;
-			width: 300px !important;
-			right: 30px;
-			transform: translate(-50%, 65px);
+			width: 12rem !important;
+			right: 1.5rem;
+			transform: translate(-50%, 3rem);
 		}
 		.news-items{
-			margin: 100px auto;
+			margin: 6rem auto;
 			text-align: center;
 			position: relative;
 			.divider{
 				position: absolute;
 				display: inline-block;
-				margin-top: 45px !important;
-				width: 1.75rem !important;
-				transform: translate(-20px,0);
+				margin-top: 2.25rem !important;
+				width: 1.75rem;
+				transform: translate(-1rem,0);
 			}
 			p{
 				@include vertical-align;

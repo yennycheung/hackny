@@ -1,0 +1,26 @@
+@media (max-width: 786px) {
+	html{
+		font-size: 14px;
+	}
+	.nav{
+		visibility: hidden;
+	}
+	.menu{
+		display:block !important;
+	}
+	section.advice{
+		.row{
+			height: auto !important;
+		}
+		.caption{
+			width: 100% !important;
+			.divider{
+				width: 4rem !important;
+				transform: translate(0, 2.5rem) !important;
+			}
+		}
+		.fellow-pic{
+			display: none !important;
+		}
+	}
+}	
