@@ -76,9 +76,11 @@ header{
 	}
 }
 section.welcome{
+	padding-bottom: 12rem;
 	overflow: auto;
 	.left{
 		position: absolute;
+		z-index: 888;
 		.logo{
 			height: 2.5rem;
 		}
@@ -89,7 +91,6 @@ section.welcome{
 			display: inline-block;
 			padding: 8px;
 		}
-
 		.apply{
 			margin-top: 2rem;
 		}
@@ -97,10 +98,6 @@ section.welcome{
 	.right{
 		width: 68%;
 		overflow: hidden;
-		.cover-pic{
-			background: url("../img/coverpic.png") no-repeat center;
-			background-size: cover;
-		}
 	}	
 }
 

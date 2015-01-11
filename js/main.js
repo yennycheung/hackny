@@ -2,10 +2,15 @@ $(function() {
 	var height = $(window).innerHeight();
 	function resizingElements(){
 	    var height = $(window).innerHeight();
-		$(".cover-pic").css("height", height*0.9);
 	    $(".nav li").css("line-height", height*0.1.toString()+"px");
 	    $("section.welcome .divider").css("width", $(window).width()*0.35);
 	    $("#middle-divider").css("height", $("section.about p").height());
+	    if($(window).width() < 786) {
+			$(".rslides img").css("height", height);
+		}
+		else{
+			$(".rslides img").css("height", height*0.9);
+		}
 	    if($(window).width() < 900) {
 			$("section.deadlines .breakpoint").removeClass("hide");
 		}
@@ -19,9 +24,29 @@ $(function() {
 			$("section.news .breakpoint").addClass("hide");
 		}
 	}
+	//using the responsiveslides.js plugin
 	resizingElements();
+	$(".rslides").responsiveSlides({
+	  auto: true,             // Boolean: Animate automatically, true or false
+	  speed: 700,            // Integer: Speed of the transition, in milliseconds
+	  timeout: 2500,          // Integer: Time between slide transitions, in milliseconds
+	  pager: false,           // Boolean: Show pager, true or false
+	  nav: false,             // Boolean: Show navigation, true or false
+	  random: false,          // Boolean: Randomize the order of the slides, true or false
+	  pause: false,           // Boolean: Pause on hover, true or false
+	  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+	  prevText: "Previous",   // String: Text for the "previous" button
+	  nextText: "Next",       // String: Text for the "next" button
+	  maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+	  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+	  manualControls: "",     // Selector: Declare custom pager navigation
+	  namespace: "rslides",   // String: Change the default namespace used
+	  before: function(){},   // Function: Before callback
+	  after: function(){}     // Function: After callback
+	});
+
 	$(".hashtag").typed({
-		strings: ["Build Cool Things", "Coolest Startup Scene", "Best City", "Hack On"],
+		strings: ["Build Cool Things", "Coolest Startup Scene", "Build a Network", "Top Quality Mentorship", "Best City", "Hack On"],
 		typeSpeed: 50
 	});
 	$(".menu").click(function(){
