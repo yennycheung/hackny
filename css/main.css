@@ -423,10 +423,6 @@ li {
 header, nav, section, article, aside, footer {
   display: block; }
 
-.error {
-  color: red !important;
-  border-color: red !important; }
-
 .wrapper {
   width: 96%;
   margin-left: auto;
@@ -438,13 +434,6 @@ header, nav, section, article, aside, footer {
 
 .right {
   float: right; }
-
-form {
-  width: 100%;
-  overflow: hidden; }
-
-input, textarea {
-  width: 100%; }
 
 section {
   width: 100%;
@@ -526,7 +515,7 @@ section {
   border: 0;
   object-fit: cover; }
 
-.btn, input[type=submit] {
+.btn {
   webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -541,7 +530,7 @@ section {
   background: #fff;
   display: block;
   padding: 1rem 2rem; }
-  .btn:hover, input[type=submit]:hover {
+  .btn:hover {
     background: black;
     color: white; }
 
@@ -661,7 +650,7 @@ section.about {
       section.about .wrapper p a {
         font-size: 1rem;
         padding: 0px; }
-    section.about .wrapper .btn, section.about .wrapper input[type=submit] {
+    section.about .wrapper .btn {
       margin: auto;
       display: block; }
     section.about .wrapper .left, section.about .wrapper .right {
@@ -739,9 +728,9 @@ section.advice {
         position: absolute;
         width: 3.5rem;
         transform: translate(0px, 2.5rem); }
-      section.advice .row .caption h1, section.advice .row .caption h2, section.advice .row .caption p, section.advice .row .caption .btn, section.advice .row .caption input[type=submit] {
+      section.advice .row .caption h1, section.advice .row .caption h2, section.advice .row .caption p, section.advice .row .caption .btn {
         margin-left: 4rem; }
-      section.advice .row .caption .btn, section.advice .row .caption input[type=submit] {
+      section.advice .row .caption .btn {
         margin-top: 1.5rem; }
       section.advice .row .caption h1 {
         position: relative;
