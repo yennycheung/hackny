@@ -737,10 +737,10 @@ section.advice {
       width: 55%; }
       section.advice .row .caption .divider {
         position: absolute;
-        width: 4rem;
+        width: 3.5rem;
         transform: translate(0px, 2.5rem); }
       section.advice .row .caption h1, section.advice .row .caption h2, section.advice .row .caption p, section.advice .row .caption .btn, section.advice .row .caption input[type=submit] {
-        margin-left: 5rem; }
+        margin-left: 4rem; }
       section.advice .row .caption .btn, section.advice .row .caption input[type=submit] {
         margin-top: 1.5rem; }
       section.advice .row .caption h1 {
@@ -752,7 +752,7 @@ section.advice {
       -o-transition: all 0.4s ease;
       -ms-transition: all 0.4s ease;
       transition: all 0.4s ease;
-      background-size: cover;
+      background-size: cover !important;
       display: inline-block;
       height: 23rem;
       width: 43%;
@@ -851,7 +851,7 @@ footer .wrapper {
   section.advice .caption {
     width: 100% !important; }
     section.advice .caption .divider {
-      width: 4rem !important;
+      width: 3.7rem !important;
       transform: translate(0, 2.5rem) !important; }
   section.advice .fellow-pic {
     display: none !important; }

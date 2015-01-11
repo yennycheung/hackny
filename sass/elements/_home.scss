@@ -229,11 +229,11 @@ section.advice{
 			width: 55%;
 			.divider{
 				position: absolute;
-				width: 4rem ; 
+				width: 3.5rem ; 
 				transform: translate(0px, 2.5rem);
 			}
 			h1, h2, p, .btn{
-				margin-left: 5rem;
+				margin-left: 4rem;
 			}
 			.btn{
 				margin-top: 1.5rem;
@@ -245,7 +245,7 @@ section.advice{
 		}
 		.fellow-pic{
 			@include transition;
-			background-size: cover;
+			background-size: cover !important;
 			display: inline-block;
 			height: 23rem;
 			width: 43%;
