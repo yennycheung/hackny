@@ -793,7 +793,9 @@ section.news {
         font-size: 0.75rem;
         margin-left: 1.8rem;
         margin-top: 2.25rem;
-        transform: translate(0, -50%); }
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
       section.news .wrapper .news-items .item {
         display: inline-block;
         width: 4.5rem;
