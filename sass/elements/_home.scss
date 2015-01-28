@@ -174,11 +174,11 @@ section.deadlines{
 					color: white;
 				}
 				p{
+					@include vertical-align;
 					margin: auto;
 					position: absolute;
-					left: 0;
+					left: 1.2rem;
 					right: 0;
-					transform: translate(5%, 40%);
 				}
 			}
 		}

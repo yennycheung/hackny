@@ -688,11 +688,14 @@ section.deadlines {
           background: url("../img/arrow_black.png");
           color: white; }
         section.deadlines .wrapper .timelines .timeline p {
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
           margin: auto;
           position: absolute;
-          left: 0;
-          right: 0;
-          transform: translate(5%, 40%); }
+          left: 1.2rem;
+          right: 0; }
 
 section.advice {
   margin-bottom: 12rem; }
