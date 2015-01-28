@@ -1,5 +1,5 @@
 html{
-	font-size: 13px;
+	font-size: 12px;
 }
 .wrapper{
 	width: 95% !important;
@@ -11,5 +11,10 @@ section.about{
 	}
 	.divider{
 		display: none;
+	}
+}
+section.advice{
+	.divider{
+		display:none;
 	}
 }
