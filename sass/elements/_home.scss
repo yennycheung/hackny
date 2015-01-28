@@ -150,7 +150,7 @@ section.deadlines{
 			position: relative;
 			transform: translate(50%, 0);
 			-webkit-transform: translate(50%, 0);
-			-moz-transform: translate(50%, 0);
+			-ms-transform: translate(50%, 0);
 
 		}
 		.title-divider{
@@ -159,7 +159,7 @@ section.deadlines{
 			right: 1.5rem;
 			transform: translate(-50%, 3rem);
 			-webkit-transform: translate(-50%, 3rem);
-			-moz-transform: translate(-50%, 3rem);
+			-ms-transform: translate(-50%, 3rem);
 		}
 		.timelines{
 			margin: 4rem auto;
@@ -206,7 +206,7 @@ section.advice{
 					& ~ div{
 						transform: translate(1rem, 0);
 						-webkit-transform: translate(1rem, 0);
-						-moz-transform: translate(1rem, 0);
+						-ms-transform: translate(1rem, 0);
 					}
 				}
 			}
@@ -221,7 +221,7 @@ section.advice{
 					& ~ div{
 						transform: translate(-1rem, 0);
 						-webkit-transform: translate(-1rem, 0);
-						-moz-transform: translate(-1rem, 0);
+						-ms-transform: translate(-1rem, 0);
 					}
 				}
 			}
@@ -231,7 +231,7 @@ section.advice{
 					width: 6rem;
 					transform: translate(-3rem, 2.5rem);
 					-webkit-transform: translate(-3rem, 2.5rem);
-					-moz-transform: translate(-3rem, 2.5rem);
+					-ms-transform: translate(-3rem, 2.5rem);
 				}
 			}
 		}	
@@ -243,7 +243,7 @@ section.advice{
 				width: 3.5rem ; 
 				transform: translate(0px, 2.5rem);
 				-webkit-transform: translate(0px, 2.5rem);
-				-moz-transform: translate(0px, 2.5rem);
+				-ms-transform: translate(0px, 2.5rem);
 			}
 			h1, h2, p, .btn{
 				margin-left: 4rem;
@@ -267,7 +267,7 @@ section.advice{
 			&:hover{
 				cursor:pointer;
 				-webkit-transform: scale(0.96,0.96);
-				-moz-transform:scale(0.96,0.96);
+				-ms-transform:scale(0.96,0.96);
 				transform:scale(0.96, 0.96);
 			}			
 		}
@@ -293,7 +293,7 @@ section.news{
 			position: relative;
 			transform: translate(25%, 0);
 			-webkit-transform: translate(25%, 0);
-			-moz-transform: translate(25%, 0);
+			-ms-transform: translate(25%, 0);
 		}
 		.title-divider{
 			position: absolute;
@@ -301,7 +301,7 @@ section.news{
 			right: 1.5rem;
 			transform: translate(-50%, 3rem);
 			-webkit-transform: translate(-50%, 3rem);
-			-moz-transform: translate(-50%, 3rem);
+			-ms-transform: translate(-50%, 3rem);
 		}
 		.news-items{
 			margin: 6rem auto;
@@ -314,12 +314,12 @@ section.news{
 				width: 1.4rem;
 				transform: translate(-0.9rem,0);
 				-webkit-transform: translate(-0.9rem, 0);
-				-moz-transform: translate(-0.9rem, 0);
+				-ms-transform: translate(-0.9rem, 0);
 			}
 			.end{
 				transform: translate(-0.6rem,0) !important;
 				-webkit-transform: translate(-0.6rem,0) !important;
-				-moz-transform: translate(-0.6rem,0) !important;
+				-ms-transform: translate(-0.6rem,0) !important;
 			}
 			p{
 				position:absolute;

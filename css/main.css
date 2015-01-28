@@ -668,14 +668,14 @@ section.deadlines {
       position: relative;
       transform: translate(50%, 0);
       -webkit-transform: translate(50%, 0);
-      -moz-transform: translate(50%, 0); }
+      -ms-transform: translate(50%, 0); }
     section.deadlines .wrapper .title-divider {
       position: absolute;
       width: 12rem;
       right: 1.5rem;
       transform: translate(-50%, 3rem);
       -webkit-transform: translate(-50%, 3rem);
-      -moz-transform: translate(-50%, 3rem); }
+      -ms-transform: translate(-50%, 3rem); }
     section.deadlines .wrapper .timelines {
       margin: 4rem auto;
       text-align: center; }
@@ -714,7 +714,7 @@ section.advice {
       section.advice .row:nth-child(odd) .fellow-pic:hover ~ div {
         transform: translate(1rem, 0);
         -webkit-transform: translate(1rem, 0);
-        -moz-transform: translate(1rem, 0); }
+        -ms-transform: translate(1rem, 0); }
     section.advice .row:nth-child(odd) div {
       float: left; }
     section.advice .row:nth-child(even) .fellow-pic {
@@ -722,14 +722,14 @@ section.advice {
       section.advice .row:nth-child(even) .fellow-pic:hover ~ div {
         transform: translate(-1rem, 0);
         -webkit-transform: translate(-1rem, 0);
-        -moz-transform: translate(-1rem, 0); }
+        -ms-transform: translate(-1rem, 0); }
     section.advice .row:nth-child(even) div {
       float: right; }
       section.advice .row:nth-child(even) div .divider {
         width: 6rem;
         transform: translate(-3rem, 2.5rem);
         -webkit-transform: translate(-3rem, 2.5rem);
-        -moz-transform: translate(-3rem, 2.5rem); }
+        -ms-transform: translate(-3rem, 2.5rem); }
     section.advice .row .caption {
       webkit-transition: all 0.4s ease;
       -moz-transition: all 0.4s ease;
@@ -742,7 +742,7 @@ section.advice {
         width: 3.5rem;
         transform: translate(0px, 2.5rem);
         -webkit-transform: translate(0px, 2.5rem);
-        -moz-transform: translate(0px, 2.5rem); }
+        -ms-transform: translate(0px, 2.5rem); }
       section.advice .row .caption h1, section.advice .row .caption h2, section.advice .row .caption p, section.advice .row .caption .btn {
         margin-left: 4rem; }
       section.advice .row .caption .btn {
@@ -764,7 +764,7 @@ section.advice {
       section.advice .row .fellow-pic:hover {
         cursor: pointer;
         -webkit-transform: scale(0.96, 0.96);
-        -moz-transform: scale(0.96, 0.96);
+        -ms-transform: scale(0.96, 0.96);
         transform: scale(0.96, 0.96); }
     section.advice .row #fellow1 {
       background: url("../img/fellow1.png") center no-repeat; }
@@ -783,14 +783,14 @@ section.news {
       position: relative;
       transform: translate(25%, 0);
       -webkit-transform: translate(25%, 0);
-      -moz-transform: translate(25%, 0); }
+      -ms-transform: translate(25%, 0); }
     section.news .wrapper .title-divider {
       position: absolute;
       width: 12rem !important;
       right: 1.5rem;
       transform: translate(-50%, 3rem);
       -webkit-transform: translate(-50%, 3rem);
-      -moz-transform: translate(-50%, 3rem); }
+      -ms-transform: translate(-50%, 3rem); }
     section.news .wrapper .news-items {
       margin: 6rem auto;
       text-align: center;
@@ -802,11 +802,11 @@ section.news {
         width: 1.4rem;
         transform: translate(-0.9rem, 0);
         -webkit-transform: translate(-0.9rem, 0);
-        -moz-transform: translate(-0.9rem, 0); }
+        -ms-transform: translate(-0.9rem, 0); }
       section.news .wrapper .news-items .end {
         transform: translate(-0.6rem, 0) !important;
         -webkit-transform: translate(-0.6rem, 0) !important;
-        -moz-transform: translate(-0.6rem, 0) !important; }
+        -ms-transform: translate(-0.6rem, 0) !important; }
       section.news .wrapper .news-items p {
         position: absolute;
         display: inline-block;
